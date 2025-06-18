@@ -74,6 +74,10 @@ Standard deviation = 1
 
 Saves the cleaned and processed DataFrame to a file named complete_output.csv.
 
+Here is the output:
+
+![Image](https://github.com/user-attachments/assets/14a3c9a4-ca0c-46d2-949b-46bfec40035b)
+
 
 
 
