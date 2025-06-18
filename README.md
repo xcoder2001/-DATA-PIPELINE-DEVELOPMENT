@@ -37,3 +37,44 @@ Conclusion:
 
 In the era of digital transformation, data has become the new oil. Every organization, regardless of its size or industry, deals with a massive amount of data daily. But raw data is often unstructured, inconsistent, or incomplete. Before it can be used for analysis, reporting, or machine learning, it must go through a structured process of cleaning, transformation, and storage. This is where Data Pipeline Development comes into play.
 Data pipeline development is a foundational skill in data science and engineering. It allows raw data to be transformed into clean, structured, and meaningful information. With the help of Python and modern tools, even beginners can start building efficient pipelines for personal projects, internships, or professional applications.
+
+
+I used the following raw data which consists of columns: age, gender, salary, and purchased.
+
+data = {
+    'age': [25, 30, 35, 40, None],
+    'gender': ['Male', 'Female', None, 'Male', None],
+    'salary': [50000, 60000, 70000, None, 40000],
+    'purchased': ['No', 'Yes', 'Yes', 'No', 'Yes']
+}
+
+
+In this data the missing values are filled in the following criteria: 
+
+For the age column, replace missing values with the average of the existing ages.
+
+For gender, fill missing values with the most frequent value (mode). If 'Male' appears the most, it's used.
+
+For salary, fill missing values with the average salary.
+
+
+
+Encoding the categorical data:
+
+LabelEncoder() creates an object to convert categories to numbers.
+
+fit_transform() maps 'Male' to 1, 'Female' to 0, etc.
+
+
+StandardScaler() will scale numeric values to have:
+
+Mean = 0
+
+Standard deviation = 1
+
+Saves the cleaned and processed DataFrame to a file named complete_output.csv.
+
+
+
+
+
