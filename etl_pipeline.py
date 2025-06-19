@@ -33,5 +33,5 @@ df.rename(columns={'age': 'age_scaled', 'salary': 'salary_scaled'}, inplace=True
 
 df.to_csv("complete_output.csv", index=False)
 
-print("✅ Saved: processed/complete_output.csv")
+print("Saved: processed/complete_output.csv")
 
